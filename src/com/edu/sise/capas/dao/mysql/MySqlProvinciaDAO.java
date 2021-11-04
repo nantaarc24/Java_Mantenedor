@@ -82,6 +82,7 @@ public class MySqlProvinciaDAO implements IProvinciaDAO{
             ps = cn.prepareStatement(UPDATE);
             int i = 1;
             ps.setString(i++,o.getNombre());
+            ps.setInt(i++,o.getId_prov());
             
             
             if(ps.executeUpdate()==0)
