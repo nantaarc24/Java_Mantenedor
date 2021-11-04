@@ -80,8 +80,8 @@ public class MySqlCarreraDAO implements ICarreraDAO{
         try{
             ps = cn.prepareStatement(UPDATE);
             int i = 1;
-            ps.setString(i,o.getNombre());
-            ps.setInt(i, o.getId_carrera());
+            ps.setString(i++,o.getNombre());
+            ps.setInt(i++, o.getId_carrera());
             
             if(ps.executeUpdate()==0)
                 throw new DAOException("No se pudo modificar el registro!!!");
