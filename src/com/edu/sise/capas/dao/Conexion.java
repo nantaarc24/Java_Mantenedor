@@ -17,10 +17,10 @@ public class Conexion {
     //BD: url conexión, usuario y clave?
     //Driver de conexión?
     
-    private static String url="jdbc:mysql://lpjava.cepy5qnydcf5.us-east-1.rds.amazonaws.com:3306/lpjava1611";
+    private static String url="jdbc:mysql://localhost:3306/lpjava1611_1";
     private static String urlSQL="jdbc:sqlserver://localhost:1433;databaseName=demo;user=sa;password=Sise2021$;";
-    private static String usuario="admin";
-    private static String clave="Sise2021$";
+    private static String usuario="root";
+    private static String clave="Fer12345";
     private static String driver="com.mysql.cj.jdbc.Driver";
     private static String driverSQL="com.microsoft.sqlserver.jdbc.SQLServerDriver";
     

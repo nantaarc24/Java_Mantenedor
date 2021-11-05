@@ -13,4 +13,5 @@ public interface IDAOManager {
     IEmpleadoDAO getEmpleadoDAO();
     IProvinciaDAO getProvinciaDAO();
     ICarreraDAO getCarreraDAO();
+    IEProductoDAO getProductoDAO();
 }

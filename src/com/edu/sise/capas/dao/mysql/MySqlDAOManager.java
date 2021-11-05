@@ -8,6 +8,7 @@ package com.edu.sise.capas.dao.mysql;
 import com.edu.sise.capas.dao.Conexion;
 import com.edu.sise.capas.dao.ICarreraDAO;
 import com.edu.sise.capas.dao.IDAOManager;
+import com.edu.sise.capas.dao.IEProductoDAO;
 import com.edu.sise.capas.dao.IEmpleadoDAO;
 import com.edu.sise.capas.dao.IProvinciaDAO;
 import java.sql.Connection;
@@ -34,6 +35,7 @@ public class MySqlDAOManager implements IDAOManager{
     private IEmpleadoDAO empleadoDao = null;
     private IProvinciaDAO provinciaDao = null;
     private ICarreraDAO carreraDao = null;
+    private IEProductoDAO productoDao = null;
     
     @Override
     public IEmpleadoDAO getEmpleadoDAO() {
@@ -57,6 +59,14 @@ public class MySqlDAOManager implements IDAOManager{
             carreraDao= new MySqlCarreraDAO(cn);
         }
         return carreraDao;
+    }
+
+    @Override
+    public IEProductoDAO getProductoDAO() {
+         if(productoDao==null){
+             productoDao=new MySqlProductoDAO(cn);
+         }
+         return productoDao;
     }
     
 }

@@ -264,6 +264,11 @@ public class iFrmEmpleados extends javax.swing.JInternalFrame {
                 cbCantRegItemStateChanged(evt);
             }
         });
+        cbCantReg.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbCantRegActionPerformed(evt);
+            }
+        });
 
         btnIzq.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/edu/sise/capas/gui/resources/izquierda.png"))); // NOI18N
         btnIzq.addActionListener(new java.awt.event.ActionListener() {
@@ -534,6 +539,10 @@ public class iFrmEmpleados extends javax.swing.JInternalFrame {
             JOptionPane.showMessageDialog(null, ex.getMessage());
         }
     }//GEN-LAST:event_btnIzqActionPerformed
+
+    private void cbCantRegActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbCantRegActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cbCantRegActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

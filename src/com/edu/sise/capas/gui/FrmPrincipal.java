@@ -35,6 +35,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
         mitemUsuarios = new javax.swing.JMenuItem();
         mniProvincia = new javax.swing.JMenuItem();
         mniCarrera = new javax.swing.JMenuItem();
+        mniProducto = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("...::SISTEMA PRINCIPAL::...");
@@ -89,6 +90,14 @@ public class FrmPrincipal extends javax.swing.JFrame {
             }
         });
         jMenuBar2.add(mniCarrera);
+
+        mniProducto.setText("Producto");
+        mniProducto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mniProductoActionPerformed(evt);
+            }
+        });
+        jMenuBar2.add(mniProducto);
 
         jMenuBar1.add(jMenuBar2);
 
@@ -146,6 +155,13 @@ public class FrmPrincipal extends javax.swing.JFrame {
         ifrInterno.show();
     }//GEN-LAST:event_mniCarreraActionPerformed
 
+    private void mniProductoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniProductoActionPerformed
+        // TODO add your handling code here:
+        iFrmProducto ifrInterno=new iFrmProducto();
+        this.add(ifrInterno);
+        ifrInterno.show();
+    }//GEN-LAST:event_mniProductoActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -191,6 +207,7 @@ public class FrmPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem mitemUsuarios;
     private javax.swing.JMenuItem mniCarrera;
     private javax.swing.JMenuItem mniEmpleados;
+    private javax.swing.JMenuItem mniProducto;
     private javax.swing.JMenuItem mniProvincia;
     private javax.swing.JMenu mniSalir;
     // End of variables declaration//GEN-END:variables
